@@ -1,0 +1,157 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header{
+    background-color: #5000ca;
+    padding-bottom: 130px ;
+}
+
+.nav-link{
+    color: white;
+}
+
+/* Banner Area */ 
+
+#big{
+    position: absolute;
+    right: 20em;
+    top: 10em;
+    transform: scale(.3,.3);
+}
+
+#big2{
+    position: absolute;
+    right: 7em;
+    top: -1em;
+    transform: scale(.15,.15);
+} 
+
+.site-banner{
+    background-color: #5000ca;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.info{
+    font-size: 180px;
+    color: white;
+}
+
+/* End Banner Area */ 
+
+.section-s1{
+    background-color: white;
+}
+
+.ss{
+    font-size: 150px;
+    color: black;
+    text-align: center;
+}
+
+.infOne{
+    margin-top: 100px;
+    font-size: 40px;
+    font-family: 'Arvo', serif;
+}
+
+.section-s2{
+    background-color: #f04e23;
+    padding-bottom: 100px;
+}
+
+.stuff{
+    position: absolute;
+    right: -1em;
+    top: 78em;
+    transform: skew(30deg);
+}
+
+.stufftwo{
+    position: absolute;
+    left: -6em;
+    bottom: -30em;
+}
+
+.contt{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.container .form{
+    position: relative;
+    box-sizing: border-box;
+    height: 100%;
+    width: 20%;
+    float: left;
+}
+
+.container .form {
+    margin-left: -10%;
+}
+
+.group { 
+    position: relative; 
+    margin-bottom: 25px; 
+  }
+  
+input {
+    font-size: 13px;
+    height: 25px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 300px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #B1B1B1;
+    color: #B1B1B1;
+    background: rgba(0,0,0,0);
+    opacity: 0.5;
+    transition: 0.2s ease;
+  }
+
+  a.send-btn {
+    float: right;
+    color: #B1B1B1;
+    transition: 0.2s ease;
+  }
+  
+  a.send-btn:hover {
+    color: #FAFAFA;
+    cursor: pointer;
+  }
+  
+  /* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+    from { background:#B1B1B1; }
+    to 	{ width:0; background:transparent; }
+  }
+  @-moz-keyframes inputHighlighter {
+    from { background:#B1B1B1; }
+    to 	{ width:0; background:transparent; }
+  }
+  @keyframes inputHighlighter {
+    from { background:#B1B1B1; }
+    to 	{ width:0; background:transparent; }
+  }
+  
+  /* active state */
+input:focus ~ .highlight {
+    -webkit-animation:inputHighlighter 0.3s ease;
+    -moz-animation:inputHighlighter 0.3s ease;
+    animation:inputHighlighter 0.3s ease;
+  }
+
+  .highlight {
+    position: absolute;
+    height: 60%; 
+    width: 100px; 
+    top: 25%; 
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+  }

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day12</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <style>
+        .header{
+            margin: 10px;
+        }
+        .nav-link{
+            color: black;
+        }
+        .container{
+            padding-top: 10px;
+            text-align: center;
+        }
+        .main {
+            margin: 0 auto;
+            max-width: 1040px;
+            padding: 10px;
+          }
+          
+          .column {
+            flex: 1;
+            flex-direction: column;
+          }
+          
+          .article {
+            background: white;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            color: #666;
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            flex-basis: auto;
+            margin: 10px;
+          }
+          
+          .article:hover,
+          .article:focus {
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+            color: #444;
+          }
+          
+          .article-image {
+            background: #eee;
+            display: block;
+            padding-top: 75%;
+            position: relative;
+            width: 100%;
+          }
+          
+          .article-image img {
+            display: block;
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+          }
+          
+          .article-image.is-3by2 {
+            padding-top: 66.6666%;
+          }
+          
+          .article-image.is-16by9 {
+            padding-top: 56.25%;
+          }
+          
+          .article-body {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            padding: 20px;
+          }
+          
+          .article-title {
+            color: #333;
+            flex-shrink: 0;
+            font-size: 1.4em;
+            font-weight: 700;
+            line-height: 1.2;
+          }
+          
+          .article-content {
+            flex: 1;
+            margin-top: 5px;
+          }
+          
+          .article-info {
+            display: flex;
+            font-size: 0.85em;
+            justify-content: space-between;
+            margin-top: 10px;
+          }
+    </style>
+</head>
+
+<body>
+    
+    <header class="header">
+        <ul class="nav navbar justify-content-center">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+        <div class="container">
+            <h1>Aneek Roy</h1>
+            <h6>Lets do something</h6>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="column main column">
+                <a class="article first-article" href="#">
+                    <figure class="article-image is-4by3">
+                      <img src="zach.jpg" alt="" style="border-radius: 25px;">
+                    </figure>
+                    <div class="article-body">
+                      <h2 class="article-title">
+                        filler text
+                      </h2>
+                      <p class="article-content">
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut placeat inventore quos quisquam eius quia itaque cumque, laudantium tenetur quae, fugit quidem nemo totam dolor ipsum quasi nostrum dolorum eaque.
+                      </p>
+                      <footer class="article-info">
+                        <span>By Aneek Roy</span>
+                        <span>42 comments</span>
+                      </footer>
+                    </div>
+                  </a>
+            </section>
+            <hr>
+            <section class="columns">
+                <div class="column nested-column">
+                <a class="article" href="#">
+                    <figure class="article-image is-4by3">
+                        <img src="max.jpg" alt="" style="border-radius: 25px;"> 
+                    </figure>
+                    <div class="article-body">
+                        <h2 class="article-title">
+                            filler text
+                        </h2>
+                        <p class="article-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quaerat eveniet, reiciendis laborum quod libero ipsa voluptas tenetur, quidem facilis rem reprehenderit a eius, tempore nihil esse ea iste omnis?
+                        </p>
+                        <footer class="article-info">
+                            <span>By Aneek Roy</span> 
+                            <span>1939 comments</span>
+                        </footer>
+                    </div>
+                </a>
+            </div>
+            </section>
+        </div>
+    </main>
+
+</body>
+</html>

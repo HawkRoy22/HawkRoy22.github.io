@@ -1,0 +1,10 @@
+.navbar-nav{
+    font-family:'Potta One', cursive;;
+    font-size: 30px;
+    margin-right: 10px;
+    padding-bottom: 10px;
+}
+
+.nav-link{
+    color:#c41e3a;
+}

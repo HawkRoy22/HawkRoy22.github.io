@@ -1,0 +1,75 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <h1 id="title">Star Wars Survey Form</h1>
+    <p id="description">Find out what type of Jedi You Are?</p>
+    <form id="survey-form">
+
+        <label for="fname" id="name-label">Name:</label>
+        <input id="name" required></br>
+
+        <label for="fname" id="email-label">Email:</label>
+        <input id="email" type="email" required></br>
+
+        <label id="number-label">Age:(Optional)</label>
+        <input type="number" id="number" required></br>
+
+        <label for="fname">Which Jedi are you:</label>
+        <select name="jedi" required>
+            <option value="Mace Windu">Mace Windu</option>
+            <option value="Anakin">Anakin</option>
+            <option value="Obi Wan Kenobi">Obi Wan Kenobi</option>
+            <option value="Yoda">Yoda</option>
+        </select></br>
+
+        <label for="fname">What color is your lightsaber?</label>
+        <input type="radio" id="blue" name="jedi" required>
+        <label for="blue">Blue</label><br>
+        <input type="radio" id="green" name="jedi" required> 
+        <label for="green">Green</label><br>
+        <input type="radio" id="purple"name="jedi" required>
+        <label for="purple">Purple</label><br>
+        <input type="radio" id="Yellow" name="jedi" required>
+        <label for="yellow">Yellow</label><br>
+        
+        <label for="fname">What is your favorite feature of the Jedi?</label>
+        <select name="feature" required>
+            <option value="Force Push">Force Push</option>
+            <option value="Force Judgement">Force Judgement</option>
+            <option value="Enhanced Reflexes">Enhanced Reflexes</option>
+            <option value="Mind Trick">Mind Trick</option>
+            <option value="Pyschometry">Pyschometry</option>
+        </select></br>
+
+        <label for="fname">What are your favorite Star Wars Films/Shows?</label>
+            <input type="checkbox" id="film1" name="film1" value="Star Wars: Episode I" required>
+            <label for="film1">Star Wars: Episode I</label></br>
+            <input type="checkbox" id="film2" name="film2" value="Star Wars: Episode II" required>
+            <label for="film2">Star Wars: Episode II</label></br>
+            <input type="checkbox" id="film3" name="film3" value="Star Wars: Episode III" required>
+            <label for="film3">Star Wars: Episode III</label></br>
+            <input type="checkbox" id="film4" name="film4" value="Star Wars: Episode IV" required>
+            <label for="film4">Star Wars: Episode IV</label></br>
+            <input type="checkbox" id="film5" name="film5" value="Star Wars: Episode V" required>
+            <label for="film5">Star Wars: Episode V</label></br>
+            <input type="checkbox" id="film6" name="film6" value="Star Wars: Episode VI" required> 
+            <label for="film6">Star Wars: Episode VI</label></br>
+            <input type="checkbox" id="film7" name="film7" value="Star Wars: The Clone Wars" required>
+            <label for="film7">Star Wars: The Clone Wars</label></br>
+
+            <label for="fname">Any Additional Comments </label>
+            <textarea id="jedi text" name="jedi text" rows="4" cols="50">
+            </textarea>
+
+            <input id ="submit" type="submit" value="Submit" required>
+    </form>
+</body>
+</html>
